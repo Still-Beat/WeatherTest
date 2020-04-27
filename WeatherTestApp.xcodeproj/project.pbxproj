@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4D49CADD245702A2004A7E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49CADC245702A2004A7E1E /* AppDelegate.swift */; };
-		4D49CADF245702A2004A7E1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49CADE245702A2004A7E1E /* SceneDelegate.swift */; };
 		4D49CAE1245702A2004A7E1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49CAE0245702A2004A7E1E /* ViewController.swift */; };
 		4D49CAE4245702A2004A7E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D49CAE2245702A2004A7E1E /* Main.storyboard */; };
 		4D49CAE6245702A3004A7E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D49CAE5245702A3004A7E1E /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		3A3A4DBA6AF81A2DD88E4863 /* Pods-WeatherTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTestApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherTestApp/Pods-WeatherTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		4D49CAD9245702A2004A7E1E /* WeatherTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D49CADC245702A2004A7E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D49CADE245702A2004A7E1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4D49CAE0245702A2004A7E1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D49CAE3245702A2004A7E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D49CAE5245702A3004A7E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				4D49CADC245702A2004A7E1E /* AppDelegate.swift */,
-				4D49CADE245702A2004A7E1E /* SceneDelegate.swift */,
 				4D49CAE0245702A2004A7E1E /* ViewController.swift */,
 				4D49CAE2245702A2004A7E1E /* Main.storyboard */,
 				4D49CAE5245702A3004A7E1E /* Assets.xcassets */,
@@ -80,7 +77,6 @@
 				D5D7470BBF898F30F30B4DC0 /* Pods-WeatherTestApp.debug.xcconfig */,
 				3A3A4DBA6AF81A2DD88E4863 /* Pods-WeatherTestApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,7 +205,6 @@
 			files = (
 				4D49CAE1245702A2004A7E1E /* ViewController.swift in Sources */,
 				4D49CADD245702A2004A7E1E /* AppDelegate.swift in Sources */,
-				4D49CADF245702A2004A7E1E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
