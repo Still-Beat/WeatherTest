@@ -35,13 +35,13 @@
                                 <rect key="frame" x="0.0" y="772.5" width="414" height="89.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGK-IF-pz1">
-                                        <rect key="frame" x="22" y="10" width="42" height="21"/>
+                                        <rect key="frame" x="22" y="10" width="42" height="69.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHp-DY-SEC">
-                                        <rect key="frame" x="346" y="10" width="46" height="30"/>
+                                        <rect key="frame" x="346" y="10" width="46" height="69.5"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <segue destination="dSY-Et-HXe" kind="showDetail" id="jV8-z9-VW4"/>
@@ -50,6 +50,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="XGK-IF-pz1" firstAttribute="centerY" secondItem="aZK-xh-NdX" secondAttribute="centerY" id="4ZB-vf-JRW"/>
+                                    <constraint firstItem="fHp-DY-SEC" firstAttribute="centerY" secondItem="aZK-xh-NdX" secondAttribute="centerY" id="8qW-WH-rCO"/>
                                     <constraint firstItem="XGK-IF-pz1" firstAttribute="leading" secondItem="aZK-xh-NdX" secondAttribute="leading" constant="22" id="B0H-7S-JsB"/>
                                     <constraint firstItem="XGK-IF-pz1" firstAttribute="top" secondItem="aZK-xh-NdX" secondAttribute="top" constant="10" id="E6n-oo-bs9"/>
                                     <constraint firstItem="fHp-DY-SEC" firstAttribute="leading" secondItem="XGK-IF-pz1" secondAttribute="trailing" constant="282" id="X88-1b-3Ez"/>
@@ -60,6 +62,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-yZ-zof">
                                 <rect key="frame" x="0.0" y="88" width="414" height="684.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Weh-mI-wCL">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Weh-mI-wCL" id="qdf-Oi-VQQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
