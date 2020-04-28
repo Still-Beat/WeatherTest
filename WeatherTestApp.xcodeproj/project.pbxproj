@@ -15,6 +15,7 @@
 		4D49CAF724571CA2004A7E1E /* WeatherListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49CAF524571CA2004A7E1E /* WeatherListViewCell.swift */; };
 		4D49CAF824571CA2004A7E1E /* WeatherListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D49CAF624571CA2004A7E1E /* WeatherListViewCell.xib */; };
 		4D49CAFA2457257A004A7E1E /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49CAF92457257A004A7E1E /* WeatherListViewModel.swift */; };
+		4DA929312458545A0028C69B /* WeatherListVIewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA929302458545A0028C69B /* WeatherListVIewCellModel.swift */; };
 		8690940F9B3BBFFC9AB617A6 /* Pods_WeatherTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD6D98B5A277560DAE85FB59 /* Pods_WeatherTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		4D49CAF524571CA2004A7E1E /* WeatherListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewCell.swift; sourceTree = "<group>"; };
 		4D49CAF624571CA2004A7E1E /* WeatherListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherListViewCell.xib; sourceTree = "<group>"; };
 		4D49CAF92457257A004A7E1E /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+		4DA929302458545A0028C69B /* WeatherListVIewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListVIewCellModel.swift; sourceTree = "<group>"; };
 		BD6D98B5A277560DAE85FB59 /* Pods_WeatherTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5D7470BBF898F30F30B4DC0 /* Pods-WeatherTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTestApp.debug.xcconfig"; path = "Target Support Files/Pods-WeatherTestApp/Pods-WeatherTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,12 +82,21 @@
 		4D49CAF024570F77004A7E1E /* WeatherList */ = {
 			isa = PBXGroup;
 			children = (
+				4DA9292F245853F00028C69B /* Cell */,
 				4D49CAE0245702A2004A7E1E /* WeatherListViewController.swift */,
-				4D49CAF524571CA2004A7E1E /* WeatherListViewCell.swift */,
-				4D49CAF624571CA2004A7E1E /* WeatherListViewCell.xib */,
 				4D49CAF92457257A004A7E1E /* WeatherListViewModel.swift */,
+				4DA929302458545A0028C69B /* WeatherListVIewCellModel.swift */,
 			);
 			path = WeatherList;
+			sourceTree = "<group>";
+		};
+		4DA9292F245853F00028C69B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4D49CAF524571CA2004A7E1E /* WeatherListViewCell.swift */,
+				4D49CAF624571CA2004A7E1E /* WeatherListViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6C52C246EA45AD366C9C32A4 /* Pods */ = {
@@ -225,6 +236,7 @@
 				4D49CAFA2457257A004A7E1E /* WeatherListViewModel.swift in Sources */,
 				4D49CADD245702A2004A7E1E /* AppDelegate.swift in Sources */,
 				4D49CAF724571CA2004A7E1E /* WeatherListViewCell.swift in Sources */,
+				4DA929312458545A0028C69B /* WeatherListVIewCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
