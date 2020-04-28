@@ -10,6 +10,11 @@ import UIKit
 
 class WeatherListViewController: UIViewController {
 
+    @IBOutlet weak var TemperatureLabel: UILabel!
+    @IBOutlet weak var AddCityButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -6,19 +6,14 @@
 //  Copyright © 2020 Still Beat. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import Alamofire
+import Realm
 
-class WeatherListViewModel: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
+
+class WeatherListViewModel {
     
 }

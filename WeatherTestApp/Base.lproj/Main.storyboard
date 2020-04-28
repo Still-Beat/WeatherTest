@@ -54,7 +54,6 @@
                                     <constraint firstItem="fHp-DY-SEC" firstAttribute="centerY" secondItem="aZK-xh-NdX" secondAttribute="centerY" id="8qW-WH-rCO"/>
                                     <constraint firstItem="XGK-IF-pz1" firstAttribute="leading" secondItem="aZK-xh-NdX" secondAttribute="leading" constant="22" id="B0H-7S-JsB"/>
                                     <constraint firstItem="XGK-IF-pz1" firstAttribute="top" secondItem="aZK-xh-NdX" secondAttribute="top" constant="10" id="E6n-oo-bs9"/>
-                                    <constraint firstItem="fHp-DY-SEC" firstAttribute="leading" secondItem="XGK-IF-pz1" secondAttribute="trailing" constant="282" id="X88-1b-3Ez"/>
                                     <constraint firstItem="fHp-DY-SEC" firstAttribute="top" secondItem="aZK-xh-NdX" secondAttribute="top" constant="10" id="XsO-yf-M8Y"/>
                                     <constraint firstAttribute="trailing" secondItem="fHp-DY-SEC" secondAttribute="trailing" constant="22" id="mMF-bZ-GCQ"/>
                                 </constraints>
@@ -88,6 +87,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="sog-WZ-Ofx"/>
+                    <connections>
+                        <outlet property="AddCityButton" destination="fHp-DY-SEC" id="5j0-Tl-Nba"/>
+                        <outlet property="TemperatureLabel" destination="XGK-IF-pz1" id="sgv-SF-RqF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDU-bR-D06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="138"/>
+            <point key="canvasLocation" x="899" y="138"/>
         </scene>
     </scenes>
 </document>
