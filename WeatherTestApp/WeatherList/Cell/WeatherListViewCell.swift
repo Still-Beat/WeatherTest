@@ -12,7 +12,7 @@ class WeatherListViewCell: UITableViewCell {
     @IBOutlet weak var TemperatureLabel: UILabel!
     @IBOutlet weak var TimeLabel: UILabel!
     @IBOutlet weak var CityLabel: UILabel!
-    
+    @IBOutlet weak var WeatherImage: UIImageView!
     
     
     

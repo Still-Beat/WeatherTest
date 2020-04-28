@@ -55,6 +55,7 @@
                 <outlet property="CityLabel" destination="vdg-Qj-5gL" id="WvO-a4-aj2"/>
                 <outlet property="TemperatureLabel" destination="Mku-9F-5tX" id="xof-9I-atg"/>
                 <outlet property="TimeLabel" destination="hpi-2y-AJU" id="Pia-2B-Jfz"/>
+                <outlet property="WeatherImage" destination="wiP-3a-qBB" id="BqX-UO-sZe"/>
             </connections>
             <point key="canvasLocation" x="198.55072463768118" y="177.12053571428569"/>
         </tableViewCell>
