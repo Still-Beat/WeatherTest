@@ -26,7 +26,7 @@
         <!--Weather List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WeatherListViewController" customModule="WeatherTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherListViewController" customModule="WeatherTestApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +51,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="XGK-IF-pz1" firstAttribute="centerY" secondItem="aZK-xh-NdX" secondAttribute="centerY" id="4ZB-vf-JRW"/>
+                                    <constraint firstItem="fHp-DY-SEC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XGK-IF-pz1" secondAttribute="trailing" constant="8" symbolic="YES" id="6v7-Jt-Pwv"/>
                                     <constraint firstItem="fHp-DY-SEC" firstAttribute="centerY" secondItem="aZK-xh-NdX" secondAttribute="centerY" id="8qW-WH-rCO"/>
                                     <constraint firstItem="XGK-IF-pz1" firstAttribute="leading" secondItem="aZK-xh-NdX" secondAttribute="leading" constant="22" id="B0H-7S-JsB"/>
                                     <constraint firstItem="XGK-IF-pz1" firstAttribute="top" secondItem="aZK-xh-NdX" secondAttribute="top" constant="10" id="E6n-oo-bs9"/>
@@ -61,16 +62,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-yZ-zof">
                                 <rect key="frame" x="0.0" y="88" width="414" height="684.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Weh-mI-wCL">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Weh-mI-wCL" id="qdf-Oi-VQQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="aAL-p0-OIj"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -90,6 +84,7 @@
                     <connections>
                         <outlet property="AddCityButton" destination="fHp-DY-SEC" id="5j0-Tl-Nba"/>
                         <outlet property="TemperatureLabel" destination="XGK-IF-pz1" id="sgv-SF-RqF"/>
+                        <outlet property="tableView" destination="7hE-yZ-zof" id="9HC-FE-QDC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

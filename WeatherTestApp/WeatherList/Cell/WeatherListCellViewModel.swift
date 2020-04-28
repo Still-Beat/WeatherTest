@@ -7,10 +7,13 @@
 //
 
 import Foundation
-
+import UIKit
 
 class WeatherListViewCellModel {
     
+    
+    struct Weathers: Codable {
+        
     let cityName: String?
     let temperatureValue: String?
     let timeValue: String?
@@ -20,6 +23,5 @@ class WeatherListViewCellModel {
         self.temperatureValue = temperatureValue
         self.timeValue = timeValue
     }
-    
-
+}
 }

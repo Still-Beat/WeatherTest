@@ -8,16 +8,43 @@
 
 import UIKit
 
-class WeatherListViewController: UIViewController {
-
+class WeatherListViewController:
+    
+UIViewController, UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    }
+    
+    
+    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var TemperatureLabel: UILabel!
     @IBOutlet weak var AddCityButton: UIButton!
+    
+    
+    private var data: [String] = []
+    
+    
+    
+    
+
+
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+ tableView.dataSource = self
+ tableView.delegate = self
+            
+            let nibFirst = UINib (nibName: "WeatherListViewCell", bundle: nil)
+            tableView.register(nibFirst, forCellReuseIdentifier: "weatherCell")
+
     }
 
 
