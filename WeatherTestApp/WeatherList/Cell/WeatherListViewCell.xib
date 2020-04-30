@@ -34,11 +34,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wiP-3a-qBB">
+                        <rect key="frame" x="0.0" y="0.0" width="404" height="120"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="hpi-2y-AJU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="92d-1q-7wo"/>
                     <constraint firstItem="Mku-9F-5tX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="48" id="OVj-2J-cTs"/>
-                    <constraint firstItem="vdg-Qj-5gL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="UwM-XU-FKh"/>
                     <constraint firstAttribute="bottom" secondItem="Mku-9F-5tX" secondAttribute="bottom" constant="48" id="cGU-VQ-2Qf"/>
                     <constraint firstItem="Mku-9F-5tX" firstAttribute="leading" secondItem="vdg-Qj-5gL" secondAttribute="trailing" constant="280" id="m1n-Uj-8LB"/>
                     <constraint firstItem="Mku-9F-5tX" firstAttribute="leading" secondItem="hpi-2y-AJU" secondAttribute="trailing" constant="280" id="nsw-cz-T04"/>
@@ -56,10 +59,5 @@
             </connections>
             <point key="canvasLocation" x="198.55072463768118" y="176.78571428571428"/>
         </tableViewCell>
-        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="wiP-3a-qBB">
-            <rect key="frame" x="0.0" y="0.0" width="404" height="120"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <point key="canvasLocation" x="199" y="177"/>
-        </imageView>
     </objects>
 </document>
