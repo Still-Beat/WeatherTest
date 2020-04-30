@@ -7,21 +7,21 @@
 //
 
 import Foundation
-import UIKit
 
-class WeatherListViewCellModel {
+
+class WeatherListCellViewModel {
     
+    let cityName: String
+    let temperatureValue: String
+    let timeValue: String
     
-    struct Weathers: Codable {
+    init(cityName: String, temperatureValue: String, timeValue: String) {
         
-    let cityName: String?
-    let temperatureValue: String?
-    let timeValue: String?
-    
-    init(cityName: String?, temperatureValue: String?, timeValue: String?) {
         self.cityName = cityName
         self.temperatureValue = temperatureValue
         self.timeValue = timeValue
+        
     }
+    
 }
-}
+

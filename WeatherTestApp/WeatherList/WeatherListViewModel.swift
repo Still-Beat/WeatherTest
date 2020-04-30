@@ -13,8 +13,7 @@ import Realm
 
 
 
-
-class WeatherListViewModel:
-{
+class WeatherListViewModel  {
     
 }
+
