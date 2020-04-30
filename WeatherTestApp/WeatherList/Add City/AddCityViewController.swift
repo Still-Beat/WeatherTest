@@ -9,10 +9,19 @@
 import UIKit
 
 class AddCityViewController: UIViewController {
-
+    @IBOutlet weak var changeCityLabel: UILabel!
+    @IBOutlet weak var cityNameField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
+    
+    @IBAction func exitButton(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        changeCityLabel.text = "Choose City"
+        
         // Do any additional setup after loading the view.
     }
     
