@@ -15,7 +15,6 @@ class WeatherListViewCell: UITableViewCell {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherImage: UIImageView!
     
-    
     var viewModel: WeatherListCellViewModel? {
         didSet {
             guard let vm  = viewModel else {
@@ -24,6 +23,12 @@ class WeatherListViewCell: UITableViewCell {
             temperatureLabel.text = vm.temperatureValue
             timeLabel.text = vm.timeValue
             cityLabel.text = vm.cityName
+            
+            
+            if vm.cloud == true {
+                weatherImage.image =  #imageLiteral(resourceName: "bad")
+            } else {
+                weatherImage.image = #imageLiteral(resourceName: "good")           }
         }
     }
     

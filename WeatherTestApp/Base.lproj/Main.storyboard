@@ -59,16 +59,24 @@
                                     <constraint firstAttribute="trailing" secondItem="fHp-DY-SEC" secondAttribute="trailing" constant="22" id="mMF-bZ-GCQ"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-yZ-zof">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-yZ-zof">
                                 <rect key="frame" x="0.0" y="88" width="414" height="684.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="aAL-p0-OIj"/>
                                 </constraints>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpX-jD-vJV">
+                                <rect key="frame" x="186" y="419.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="gpX-jD-vJV" firstAttribute="centerY" secondItem="7hE-yZ-zof" secondAttribute="centerY" id="1Fn-cV-tyL"/>
+                            <constraint firstItem="gpX-jD-vJV" firstAttribute="centerX" secondItem="7hE-yZ-zof" secondAttribute="centerX" id="2Ah-xk-8vX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aZK-xh-NdX" secondAttribute="trailing" id="2mw-oZ-ksW"/>
                             <constraint firstItem="aZK-xh-NdX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AUA-Rv-CYI"/>
                             <constraint firstItem="aZK-xh-NdX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="BVA-iV-OF4"/>
@@ -91,14 +99,36 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Add City View Controller-->
         <scene sceneID="m3H-FY-Tj5">
             <objects>
-                <viewController id="dSY-Et-HXe" sceneMemberID="viewController">
+                <viewController id="dSY-Et-HXe" customClass="AddCityViewController" customModule="WeatherTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlC-ep-Wt3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="46M-uE-oEs">
+                                <rect key="frame" x="159" y="294" width="97" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-YC-4ZR">
+                                <rect key="frame" x="186" y="235" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwy-E5-vDY">
+                                <rect key="frame" x="186" y="371" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="46M-uE-oEs" firstAttribute="centerX" secondItem="ndZ-V5-xbH" secondAttribute="centerX" id="5uf-wn-J55"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ndZ-V5-xbH"/>
                     </view>
                 </viewController>

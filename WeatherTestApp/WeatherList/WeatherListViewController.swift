@@ -16,10 +16,18 @@ UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var addCityButton: UIButton!
+    @IBOutlet weak var addCityName: UILabel!
     
     
+    let data:  [WeatherListCellViewModel] = [
+        
+        WeatherListCellViewModel(cityName: "Ульяновск", temperatureValue: "15", timeValue: "21:00", cloud: true),
+        
+        WeatherListCellViewModel(cityName: "Москва", temperatureValue: "6", timeValue: "20:50", cloud: false),
+        WeatherListCellViewModel(cityName: "Санкт-Петербург", temperatureValue: "20", timeValue: "20:50", cloud: true
+        )
     
-    let data:  [WeatherListCellViewModel] = [WeatherListCellViewModel(cityName: "Ульяновск", temperatureValue: "15", timeValue: "21:00")]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +37,7 @@ UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         let nibFirst = UINib (nibName: "WeatherListViewCell", bundle: nil)
         tableView.register(nibFirst, forCellReuseIdentifier: "weatherCell")
+        
         
     }
     

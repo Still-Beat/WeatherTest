@@ -14,12 +14,14 @@ class WeatherListCellViewModel {
     let cityName: String
     let temperatureValue: String
     let timeValue: String
+    let cloud: Bool
     
-    init(cityName: String, temperatureValue: String, timeValue: String) {
+    init(cityName: String, temperatureValue: String, timeValue: String, cloud: Bool) {
         
         self.cityName = cityName
         self.temperatureValue = temperatureValue
         self.timeValue = timeValue
+        self.cloud = cloud
         
     }
     
