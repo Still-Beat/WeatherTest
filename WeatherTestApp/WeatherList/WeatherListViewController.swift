@@ -17,9 +17,7 @@ UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var addCityButton: UIButton!
     @IBOutlet weak var addCityName: UILabel!
-    @IBAction func exitButton(_ sender: Any) {
-        self.dismiss(animated: true)
-    }
+  
     
     
     

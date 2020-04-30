@@ -125,6 +125,7 @@
                                     <action selector="SubmitButton:" destination="07p-XR-Jg0" eventType="touchUpInside" id="ppp-ul-R4X"/>
                                     <action selector="exit:" destination="07p-XR-Jg0" eventType="touchUpInside" id="Mqs-Ik-mZd"/>
                                     <action selector="exitButton:" destination="07p-XR-Jg0" eventType="touchDragExit" id="Cdk-3C-O4Q"/>
+                                    <action selector="exitButton:" destination="dSY-Et-HXe" eventType="touchUpInside" id="jfZ-RW-JQ7"/>
                                     <action selector="submitButton:" destination="07p-XR-Jg0" eventType="touchUpInside" id="cXu-Jg-mhn"/>
                                 </connections>
                             </button>
