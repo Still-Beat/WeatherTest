@@ -18,8 +18,7 @@ UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var addCityButton: UIButton!
     @IBOutlet weak var addCityName: UILabel!
   
-    
-    
+ 
     
     let data:  [WeatherListCellViewModel] = [
         

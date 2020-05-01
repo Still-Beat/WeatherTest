@@ -107,19 +107,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tME-NJ-7QQ">
-                                <rect key="frame" x="157" y="404" width="100" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wit-t4-hYb">
-                                <rect key="frame" x="186" y="343" width="42" height="21"/>
+                                <rect key="frame" x="186" y="166" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBc-Ht-VlP">
-                                <rect key="frame" x="184" y="478" width="46" height="30"/>
+                                <rect key="frame" x="184" y="291" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="SubmitButton:" destination="07p-XR-Jg0" eventType="touchUpInside" id="ppp-ul-R4X"/>
@@ -129,16 +124,22 @@
                                     <action selector="submitButton:" destination="07p-XR-Jg0" eventType="touchUpInside" id="cXu-Jg-mhn"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tME-NJ-7QQ">
+                                <rect key="frame" x="107" y="207" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="centerY" secondItem="vlC-ep-Wt3" secondAttribute="centerY" id="6Mk-wX-342"/>
-                            <constraint firstItem="WBc-Ht-VlP" firstAttribute="centerX" secondItem="tME-NJ-7QQ" secondAttribute="centerX" id="Dke-d2-Y90"/>
-                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="leading" secondItem="ndZ-V5-xbH" secondAttribute="leading" constant="157" id="NyV-PC-m1d"/>
-                            <constraint firstItem="WBc-Ht-VlP" firstAttribute="top" secondItem="tME-NJ-7QQ" secondAttribute="bottom" constant="40" id="afY-n3-1HT"/>
-                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="top" secondItem="wit-t4-hYb" secondAttribute="bottom" constant="40" id="htg-7x-56p"/>
-                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="centerX" secondItem="ndZ-V5-xbH" secondAttribute="centerX" id="mI5-hk-PGz"/>
-                            <constraint firstItem="wit-t4-hYb" firstAttribute="centerX" secondItem="tME-NJ-7QQ" secondAttribute="centerX" id="vcx-3r-7wX"/>
+                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="top" secondItem="wit-t4-hYb" secondAttribute="bottom" constant="20" id="2ho-WS-bRW"/>
+                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="centerX" secondItem="wit-t4-hYb" secondAttribute="centerX" id="80w-7Z-b4M"/>
+                            <constraint firstItem="ndZ-V5-xbH" firstAttribute="trailing" secondItem="tME-NJ-7QQ" secondAttribute="trailing" constant="107" id="L99-VN-5OO"/>
+                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="leading" secondItem="ndZ-V5-xbH" secondAttribute="leading" constant="107" id="MeE-uD-yF9"/>
+                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="top" secondItem="vlC-ep-Wt3" secondAttribute="top" constant="207" id="avg-pd-R7r"/>
+                            <constraint firstItem="WBc-Ht-VlP" firstAttribute="top" secondItem="tME-NJ-7QQ" secondAttribute="bottom" constant="50" id="ihI-Lg-JA5"/>
+                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="centerX" secondItem="ndZ-V5-xbH" secondAttribute="centerX" id="tfN-Tk-Zxt"/>
+                            <constraint firstItem="tME-NJ-7QQ" firstAttribute="centerX" secondItem="WBc-Ht-VlP" secondAttribute="centerX" id="u9i-Jz-1fY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ndZ-V5-xbH"/>
                     </view>
