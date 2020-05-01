@@ -34,6 +34,8 @@ UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addCityButton.setTitle("Add City", for: .normal)
+        
         tableView.dataSource = self
         tableView.delegate = self
         

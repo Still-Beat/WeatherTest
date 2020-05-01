@@ -15,6 +15,7 @@ class AddCityViewController: UIViewController {
     
     @IBAction func exitButton(_ sender: Any) {
         self.dismiss(animated: true)
+        
     }
     
     
@@ -23,6 +24,8 @@ class AddCityViewController: UIViewController {
         
         
         changeCityLabel.text = "Choose City"
+        submitButton.setTitle("OK", for: .normal)
+        
         
         // Do any additional setup after loading the view.
     }
