@@ -13,9 +13,8 @@ class WeatherListViewController:
 UIViewController, UITableViewDataSource, UITableViewDelegate, AddCityViewControllerDelegate {
     
     func cityBeChanges(name: String) {
-        cityName.text = ""
+        cityName.text = String(name)
     }
-    
     
     func alertMainView() {
         let alert = UIAlertController(title: "Ошибка", message: "Текста нет", preferredStyle: .alert)
@@ -30,6 +29,7 @@ UIViewController, UITableViewDataSource, UITableViewDelegate, AddCityViewControl
     @IBOutlet weak var addCityName: UILabel!
     @IBOutlet weak var cityName: UILabel!
     
+    var textLabel: String = ""
 
     let data:  [WeatherListCellViewModel] = [
         
@@ -51,7 +51,8 @@ UIViewController, UITableViewDataSource, UITableViewDelegate, AddCityViewControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         
+        cityName.text = textLabel
         addCityButton.setTitle("Add City", for: .normal)
         
         tableView.dataSource = self
