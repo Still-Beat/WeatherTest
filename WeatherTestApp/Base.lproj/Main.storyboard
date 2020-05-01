@@ -91,6 +91,7 @@
                     <navigationItem key="navigationItem" id="sog-WZ-Ofx"/>
                     <connections>
                         <outlet property="addCityButton" destination="fHp-DY-SEC" id="5j0-Tl-Nba"/>
+                        <outlet property="cityName" destination="gpX-jD-vJV" id="D7m-sC-CtN"/>
                         <outlet property="tableView" destination="7hE-yZ-zof" id="9HC-FE-QDC"/>
                         <outlet property="temperatureLabel" destination="XGK-IF-pz1" id="sgv-SF-RqF"/>
                     </connections>

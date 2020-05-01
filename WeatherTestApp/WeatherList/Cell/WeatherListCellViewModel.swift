@@ -7,9 +7,7 @@
 //
 
 import Foundation
-protocol WeatherListCellViewModelDelegate {
-    func CountBeChanges()
-}
+
 
 class WeatherListCellViewModel {
     
@@ -17,7 +15,7 @@ class WeatherListCellViewModel {
     let temperatureValue: String
     let timeValue: String
     let cloud: Bool
-    var delegate: WeatherListCellViewModelDelegate?
+
     
     init(cityName: String, temperatureValue: String, timeValue: String, cloud: Bool) {
         
@@ -25,7 +23,7 @@ class WeatherListCellViewModel {
         self.temperatureValue = temperatureValue
         self.timeValue = timeValue
         self.cloud = cloud
-        self.delegate?.CountBeChanges()
+
         
     }
     
