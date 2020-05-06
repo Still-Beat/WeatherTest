@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 struct Main: Codable {
     
     let temp: Int
@@ -17,7 +18,9 @@ struct Main: Codable {
     let pressure:Int
     let humidity:Int
     
+    
     enum CodingKeys: String, CodingKey {
+        
         case temp
         case feelsLike = "feels_like"
         case tempMin = "temp_min"
@@ -28,6 +31,7 @@ struct Main: Codable {
     
     
     init(from decoder: Decoder) throws {
+        
         let container = try decoder.container(keyedBy: CodingKeys.self)
         temp = try container.decode(Int.self, forKey: .temp)
         feelsLike = try container.decode(Double.self, forKey: .feelsLike)
@@ -36,5 +40,4 @@ struct Main: Codable {
         pressure = try container.decode(Int.self, forKey: .pressure)
         humidity = try container.decode(Int.self, forKey: .humidity)
     }
-    
 }

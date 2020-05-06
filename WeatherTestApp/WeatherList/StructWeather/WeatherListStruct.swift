@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct WeatherList {
+
+struct WeatherListStruct {
     
     let coord: Coord
     let weather: Weather
@@ -25,8 +26,8 @@ struct WeatherList {
     let cod: Int
     
     
-    
     enum CodingKeys: String, CodingKey {
+        
         case coord
         case weather
         case base
@@ -40,14 +41,11 @@ struct WeatherList {
         case id
         case name
         case cod
-        
-        
-        
-        
     }
     
     
     init(from decoder: Decoder) throws {
+        
         let container = try decoder.container(keyedBy: CodingKeys.self)
         coord = try container.decode(Coord.self, forKey: .coord)
         weather = try container.decode(Weather.self, forKey: .weather)
@@ -63,6 +61,5 @@ struct WeatherList {
         name = try container.decode(String.self, forKey: .name)
         cod = try container.decode(Int.self, forKey: .cod)
     }
-    
 }
 
