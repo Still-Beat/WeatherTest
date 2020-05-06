@@ -12,10 +12,11 @@ class WeatherListViewController:
     
 UIViewController, UITableViewDataSource, UITableViewDelegate, AddCityViewControllerDelegate {
   
-    
+    let model = WeatherListViewModel()
     
     func cityBeChanges(name: String) {
-        cityName.text = name
+        
+        model.getData(city: name)
     }
         
     func alertMainView() {
