@@ -20,10 +20,10 @@ struct Main: Codable {
     enum CodingKeys: String, CodingKey {
         case temp
         case feelsLike = "feels_like"
-       case tempMin = "temp_min"
-       case tempMax = "temp_max"
+        case tempMin = "temp_min"
+        case tempMax = "temp_max"
         case pressure
-       case humidity
+        case humidity
     }
     
     

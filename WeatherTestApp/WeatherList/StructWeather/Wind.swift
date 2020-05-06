@@ -11,12 +11,12 @@ import Foundation
 struct Wind: Codable {
     let speed: Int
     let deg: Int
-   
+    
     
     enum CodingKeys: String, CodingKey {
         case speed
         case deg
-       
+        
     }
     
     
@@ -24,7 +24,7 @@ struct Wind: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         speed = try container.decode(Int.self, forKey: .speed)
         deg = try container.decode(Int.self, forKey: .deg)
-   
+        
         
     }
 }

@@ -62,9 +62,7 @@ struct WeatherList {
         id = try container.decode(Int.self, forKey: .id)
         name = try container.decode(String.self, forKey: .name)
         cod = try container.decode(Int.self, forKey: .cod)
-        
-        
+    }
     
 }
-}
-    
+
